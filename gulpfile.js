@@ -19,10 +19,17 @@ gulp.task('styles', function() {
     return gulp.src('theme/stylesheet.scss')
         .pipe(sass(Options.SassOutputStyle).on('error', sass.logError))
         .pipe(gulp.dest('theme'))
+        .pipe(livereload());
 
 });
+
+//Watch Task
 gulp.task('watch', function() {
+    livereload.listen();
     gulp.watch('theme/styles/*.scss', ['styles']);
+    gulp.watch('views/*', function() {
+        livereload.reload('template/*');
+    });
 
 });
 gulp.task('default', ['styles', 'watch']);
