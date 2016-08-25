@@ -1,9 +1,6 @@
-/**
- * [Automate ]
- * @type {[type]}
- */
 var gulp = require('gulp'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    livereload = require('gulp-livereload');
 
 // Here you can specify the output style of .css file
 // as like the other options
