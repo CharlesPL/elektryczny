@@ -49,8 +49,7 @@ $forum-list-description-font-size: $font-size + 2px;
 $topic-link-font-size: $font-size + 4px;
 $topic-link-font-family: $forum-link-font-family;
 $tab-font-size: $font-size;
-$tab-line-height: $tab-font-size * 2 + 4px;
-// Posts
+$tab-line-height: $tab-font-size * 2 + 4px; // Posts
 $post-content-font-size: $font-size + 2px; // Post content
 $post-content-line-height: 1.4;
 $post-content-font-family: 'Roboto', sans-serif;
@@ -64,47 +63,43 @@ $post-block-title-font-size: $post-quote-font-size; // Quote title, code title
 $post-block-title-line-height: 1.6;
 $post-block-title-font-family: $post-content-font-family;
 $post-profile-font-size: $font-size;
-$post-profile-line-height: $line-height;
-// Forms
+$post-profile-line-height: $line-height; // Forms
 $input-button-font-size: $font-size + 2px;
 $input-button-font-family: 'Roboto', sans-serif;
-$bbcode-button-font-size: $font-size + 1px;
-//
+$bbcode-button-font-size: $font-size + 1px; //
 // Color palette
 //
 // Absolute black and white colors. Reverse them for dark styles
-$black-color: #000;
-// Main color to mix with. Black for light styles, white for dark styles
-$white-color: #fff;
-// Opposite of $black-color
+$black-color: #000; // Main color to mix with. Black for light styles, white for dark styles
+$white-color: #fff; // Opposite of $black-color
 // Primary colors
-$primary-color: #2196F3; // Blue 500
+$primary-color: darken(#4355bd,15%); // Blue 500
 $primary-color-dark: #1565C0; // Blue 800
-$primary-color-content: #64B5F6; // Blue 300
-$primary-color-variant: #03A9F4; // Light Blue 500
-$primary-color-variant-dark: #01579B; // Light Blue 900
-$primary-color-variant-content: #4FC3F7; // Light Blue 300
-$primary-color-accent: #2979FF; // Blue A400
-$primary-color-accent-dark: #2962FF; // Blue A700
+$primary-color-content: white; // Blue 300
+$primary-color-variant: white; // Light Blue 500
+$primary-color-variant-dark: white; // Light Blue 900
+$primary-color-variant-content: white; // Light Blue 300
+$primary-color-accent: white; // Blue A400
+$primary-color-accent-dark: white; // Blue A700
 // Secondary colors
-$secondary-color: #FFC107; // Amber 500
+$secondary-color: white; // Amber 500
 $secondary-color-dark: #FF6F00; // Amber 900
 $secondary-color-accent: #FFC400; // Amber A400
 $secondary-color-accent-dark: #FFAB00; // Amber A700
 // Page colors							// Grey 300
-$page-background: #E0E0E0; // HTML element
-$content-background: #E0E0E0; // Page inside content wrapper
+$content-background: darken(#E0E0E0,50%); // Page inside content wrapper
+$page-background: darken($content-background, 7%); // HTML element
 $content-border-color: #E0E0E0; // Border color for content wrapper
 $overlay-color: $white-color; // Text on top of sections that use colorful background.
 // Grey 100
-$block-background: #F5F5F5; // Background of blocks // should use shadow not color
+$block-background: darken($content-background, 7%); // Background of blocks // should use shadow not color
 $block-background-reported: #f5ede9; // Background for reported posts
 // Global color values
 $text-color: #141414; // Text color
 $bold-text-color: $black-color; // Text color with higher contrast to background. #000 or #fff
 $post-text-color: $text-color; // Text inside posts
-$link-color: $primary-color; // Links
-$link-hover-color: $primary-color-variant-dark; // Links, hover state
+$link-color: $overlay-color; // Links
+$link-hover-color: $overlay-color; // Links, hover state
 $muted-color: #BDBDBD; // Gray color
 $faint-color: #E0E0E0; // Gray color
 $rules-color: $secondary-color; // Forum rules
@@ -112,22 +107,18 @@ $rules-color: $secondary-color; // Forum rules
 // Calculated colors
 //
 // Misc. DO NOT EDIT!
-$light: if(lightness($black-color) < 50%, true, false);
-// Blocks
+$light: if(lightness($black-color) < 50%, true, false); // Blocks
 $block-background2: #f6f6f6; // Blocks with .bg2 background color
 $block-background3: #f8f8f8; // Blocks with .bg3 background color - mostly UCP/MCP and posting form
 $block-border: #e0e0e0; // Border color for blocks
-$border-radius: 0;
-// Main border radius
+$border-radius: 0; // Main border radius
 $block-top-border: lighten($block-background, 10%); // Top border of forums in forums list
-$block-bottom-border: darken($block-background, 5%);
-// Bottom border of forums in forums list
+$block-bottom-border: darken($block-background, 5%); // Bottom border of forums in forums list
 $block-inner-border: $block-bottom-border; // Border inside blocks where there is only 1 border instead of top/bottom borders
 $block-title-color: desaturate($link-color, 5%); // Title inside blocks, such as post title
 // Breadcrumbs
-$breadcrumb-color: $primary-color;
-$breadcrumb-color-hover: $secondary-color-dark;
-// Tabs
+$breadcrumb-color: white;
+$breadcrumb-color-hover: $secondary-color-dark; // Tabs
 $tab-height: $nav-primary-font-size + 23px !default; // main tab width
 $tab-padding: 12px !default;
 $tab-padding-glyph: 8px !default;
@@ -141,21 +132,18 @@ $tab-selected-color: $overlay-color;
 $tab-selected-background: $primary-color;
 $tab-selected-border-bottom: $secondary-color-accent;
 $tab-border-bottom-style: solid;
-$tab-border-bottom-width: 2px;
-// Badge
+$tab-border-bottom-width: 2px; // Badge
 $badge-color: $overlay-color;
-$badge-background: #FF4081;
-// Pink A200
+$badge-background: #FF4081; // Pink A200
 // Header
 $header-bg: $content-background;
 $header-text: $text-color;
 $header-link: $overlay-color;
-$header-link-hover: mix($header-link, $header-bg, 80%);
-// Primary navigation
+$header-link-hover: mix($header-link, $header-bg, 80%); // Primary navigation
 $primary-nav-card-depth: 1; //$card-default;		//1-5 else none
 $primary-nav-bg: $primary-color;
 $primary-nav-color: $faint-color;
-$primary-nav-selected-bg: $primary-color-content;
+$primary-nav-selected-bg: darken($primary-color,5%);
 $primary-nav-selected-color: $overlay-color;
 $primary-nav-selected-bd-color: $secondary-color;
 $primary-nav-hover-bg: $primary-color;
@@ -163,61 +151,53 @@ $primary-nav-hover-color: $overlay-color;
 $primary-nav-hover-bd-color: $secondary-color;
 $primary-nav-alert-bg: hsl(0, saturation($secondary-color), lightness($secondary-color));
 $primary-nav-alert-color: $overlay-color;
-$primary-nav-alert-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
-// Secondary navigation
-$secondary-nav-hover-link: $link-hover-color;
-// Dropdown
-$dropdown-bg: $block-background;
+$primary-nav-alert-shadow: 1px 1px 3px rgba(0, 0, 0, .2); // Secondary navigation
+$secondary-nav-hover-link: $link-hover-color; // Dropdown
+$dropdown-bg: $primary-color;
 $dropdown-border: darken($dropdown-bg, 10%);
 $dropdown-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
 $dropdown-shadow-up: 1px 0 5px rgba(0, 0, 0, 0.5);
 $dropdown-inner-border: $dropdown-border;
-$dropdown-heading-top: $dropdown-bg;
+$dropdown-heading-top: white;
 $dropdown-heading-bottom: $dropdown-heading-top;
 $dropdown-heading-color: $primary-color;
 $dropdown-heading-link-color: $primary-color;
 $dropdown-heading-link-hover-color: $secondary-color-dark;
 $forum-description-color: $overlay-color;
-$forum-description-bg: mix($black-color, $block-background, 75%);
-// Notifications
-$notification-unread-bg: $primary-color-content;
+$forum-description-bg: mix($black-color, $block-background, 75%); // Notifications
+$notification-unread-bg: darken($dropdown-bg, 10%);
 $notification-unread-color: $overlay-color;
 $notification-unread-strong-color: $overlay-color;
 $dropdown-notification-bg: $block-background;
 $dropdown-notification-hover-bg: $faint-color;
 $dropdown-notification-color: $link-color;
-$dropdown-notification-hover-color: $primary-color-dark;
+$dropdown-notification-hover-color: $link-color;
 $dropdown-notification-strong-color: #9E9E9E; // Grey 500
-$dropdown-notification-strong-hover-color: $secondary-color-accent-dark;
-// Panels
+$dropdown-notification-strong-hover-color: $secondary-color-accent-dark; // Panels
 $panel-title-color: desaturate(if($light, darken($primary-color, 10%), lighten($primary-color, 10%)), 25%);
-$panel-title-border: $block-inner-border;
-// Content outside of blocks
-$page-title-color: $primary-color;
-$stats-title-color: $primary-color;
+$panel-title-border: $block-inner-border; // Content outside of blocks
+$page-title-color: white;
+$stats-title-color: white;
 $content-top-border: lighten($content-background, 10%);
 $content-bottom-border: darken($content-background, 10%);
-$content-inner-border: $content-bottom-border;
-// Heading section
+$content-inner-border: $content-bottom-border; // Heading section
 $heading-bg: $primary-color;
 $heading-border: $heading-bg;
 $heading-color: $overlay-color;
 $heading-link: $overlay-color;
-$heading-link-hover: $overlay-color;
-// Inputs
-$input-text: $text-color; // Input text color
-$input-bg: $white-color; // Input background
+$heading-link-hover: $overlay-color; // Inputs
+$input-text: white; // Input text color
+$input-bg: darken($content-background, 10%); // Input background
 $input-border: #c6c6c6; // Input border color
 $input-hover-text: $input-text;
-$input-hover-bg: $input-bg;
+$input-hover-bg: darken($content-background, 10%);
 $input-hover-border: $secondary-color;
-$input-focus-text: $input-text;
+$input-focus-text: darken($content-background, 10%);
 $input-focus-bg: $input-bg;
 $input-focus-border: $primary-color;
 $input-border-radius: 2px;
 $search-box-border: #c6c6c6; // Border for search box block
-$search-box-border-header: #ccc;
-// Same as above, for search box in header
+$search-box-border-header: #ccc; // Same as above, for search box in header
 $search-box-shadow: 1px 1px 3px rgba(0, 0, 0, .1); // Box-shadow for search box in header
 // Buttons
 $button-bg: mix($block-background, $primary-color, 10%);
@@ -238,11 +218,9 @@ $bbcode-background: #fff;
 $bbcode-background2: #f4f4f4;
 $bbcode-outer-border: if($light, darken($bbcode-background, 7%), lighten($bbcode-background, 7%));
 $bbcode-inner-border: if($light, darken($bbcode-background, 5%), lighten($bbcode-background, 5%));
-$bbcode-heading-text: #666;
-// Code colors
+$bbcode-heading-text: #666; // Code colors
 @function code-color($hue) {
 	 @return hsl($hue, saturation($primary-color), lightness($primary-color));
 }
-$bbcode-code-color: code-color(128deg);
-// Do not edit few lines below
+$bbcode-code-color: code-color(128deg); // Do not edit few lines below
 $post-side: if($profile-side == left, right, left);

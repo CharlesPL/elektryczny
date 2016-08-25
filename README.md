@@ -26,11 +26,11 @@ after this deactivate prosilver theme.
  9. I highly recommend you to download this [plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdle)
  Be sure to turn it on when you are on phpbb site modifying .scss files.
 
- 10. Every time you want to start work with stylesheets type sudo gulp in terminal.
+ 10. Every time you want to start work with stylesheets type `sudo gulp` in terminal.
 
  Happy Coding ;)
 
- 
+
 ----------
 
 

@@ -1,3 +1,6 @@
+/**
+ * [Created by FeiryCod]
+ */
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     livereload = require('gulp-livereload');
