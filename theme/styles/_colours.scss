@@ -82,7 +82,7 @@ hr {
 	.inputbox:focus,
 	.inputbox:hover {
 		background-color: $block-background3 !important;
-		color: $bold-text-color !important;
+		color: black !important;
 		border-color: $block-background !important;
 	}
 	.button:focus,
@@ -1305,13 +1305,13 @@ select {
 }
 .inputbox:hover,
 select:hover {
-	background-color: $primary-color;
+	background-color: white;
 	border-color: $input-hover-border;
 	color: $input-hover-text;
 }
 .inputbox:focus,
 select:focus {
-	background-color: $input-bg;
+	background-color: white;
 	border-color: $input-focus-border;
 	color: $input-focus-text;
 }
