@@ -408,6 +408,7 @@ input.button1:focus, input.button2:focus, button.button2:focus, input.button3:fo
 	height: $button-outer-height;
 	margin: 0;
 	padding: 3px 5px;
+
 }
 
 .search-box a.button {
@@ -418,6 +419,7 @@ input.button1:focus, input.button2:focus, button.button2:focus, input.button3:fo
 	padding: 2px 5px 2px 3px;
 	.rtl & {
 		border-radius: $big-button-border-radius 0 0 $big-button-border-radius;
+
 	}
 }
 

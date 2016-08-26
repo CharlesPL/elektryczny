@@ -282,18 +282,18 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 #site-description {
 	@extend %clearfix;
 	padding: 1.25em;
-	
+
 	#site-description-text {
 		display: inline-block;
 		height: 96px;
 	}
-	
+
 	.sitename {
 		margin-top: 20px;
 		color: $overlay-color;
 		font-size: 24px;
 	}
-	
+
 	span {
 		display: inline-block;
 		font-size: 12px;
@@ -383,6 +383,7 @@ $nav-alert-font-size:		9px !default;
 				display: block;
 				margin: 0;
 				float: right;
+		
 				.rtl & {
 					float: left;
 				}
@@ -396,7 +397,7 @@ $nav-alert-font-size:		9px !default;
 	li.small-icon > a {
 		padding-left: 18px;
 	}
-	
+
 	/* Primary navbar nav-tabs main class */
 	.nav-tabs {
 		@extend %clearfix;
@@ -429,7 +430,7 @@ $nav-alert-font-size:		9px !default;
 				}
 			}
 		}
-		
+
 		.nav-link {
 			text-decoration: none;
 			color: inherit;
@@ -614,7 +615,7 @@ $nav-alert-font-size:		9px !default;
 				@extend %glyph-only-media;
 			}
 		}
-		
+
 		.pm {
 			.nav-link {
 				@extend %glyph-only;
@@ -761,7 +762,7 @@ $nav-alert-font-size:		9px !default;
 					}
 				}
 			}
-			
+
 			// Primary navbar nav-tabs NOT FIXED (Sticked to the top)
 			.nav-tabs {
 				position: relative;
@@ -911,7 +912,7 @@ $nav-alert-font-size:		9px !default;
 
 .panel {
 	@include section;
-	
+
 	margin: 10px 0;
 
 	// UCP/MCP panel

@@ -24,7 +24,7 @@ ul.topiclist li {
 			width: 16px;
 			text-decoration: none !important;
 			outline-style: none !important;
-			color: inherit;
+			color: white;
 			transition: opacity 0.3s ease;
 			opacity: .5;
 			&:after {
@@ -208,7 +208,7 @@ li.header dt {
 		margin-right: 440px;
 		text-indent: 5px;
 	}
-	.forabg &, 
+	.forabg &,
 	.forabg & .list-inner {
 		margin: 0;
 		width: auto;

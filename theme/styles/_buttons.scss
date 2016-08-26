@@ -29,7 +29,7 @@ $button-outer-height:	$button-inner-height + $button-border-width * 2;
 	& > strong {
 		font-weight: 600;
 	}
-	
+
 	.button-text {
 		@media (max-width: 550px) {
 			display: none;
@@ -56,6 +56,8 @@ $button-outer-height:	$button-inner-height + $button-border-width * 2;
 	display: inline-block;
 	font-size: $button-glyph-font-size;
 	text-align: center;
+	color:white !important; //TODO: Since I cannot find the proper selector
+	//I used !important
 	font-weight: normal;
 	text-indent: 0;
 	font-style: normal;
@@ -190,11 +192,13 @@ $button-outer-height:	$button-inner-height + $button-border-width * 2;
 	background-position: 0 50%;
 	background-repeat: no-repeat;
 	background-image: none;
+
 }
 
 .small-icon > a {
 	display: inline-block;
 	padding: 0 0 0 18px;
+
 }
 
 ul.linklist.bulletin > li.small-icon:before {
@@ -203,6 +207,7 @@ ul.linklist.bulletin > li.small-icon:before {
 
 .dropdown .small-icon > a {
 	display: block;
+
 }
 
 // Poster contact icons
